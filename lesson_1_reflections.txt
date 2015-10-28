@@ -1,0 +1,108 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Rather than having to go line by line and compare a ton of exactly the same
+lines in the hopes of eyeballing the error, the process is automated.
+It will show me any changes between the files and the lines where they occured.
+This significantly reduces the places I need to look for the bug. It's also 
+much more pleasant an experience.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+The first thing that comes to mind is the ability to experiment with a new
+feature or layout without worrying about breaking the current code. I have
+experienced the frustration of multiple undo's in order to roll back to a 
+prior styling in a website. This sort of does the job, but only if the changes 
+I made occured in the current working session. I have wanted to do this after
+closing a program and coming back later, but I couldn't. With easy access to 
+the entire history of a file, I could type a few commands and restore to where I was. I've also experienced how a bunch of small changes over several working sessions can result in a tough to manage css, that I wish I could revert back to before it got messy. I mean a clean slate of sorts but earlier in project and not start. Again, not having to manually try and remember where I made changes would increase my efficiency.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved like Google Docs does?
+
+The pros of manually choosing when to commit: you control how often a commit
+takes place, you control how big the commit is, when you create a commit, you
+can add a message to describe the nature of the changes being commited; the
+first two are related in that there is no one size in terms of actual lines
+changed that should determine the frequency of the commit. Manually choosing
+when to make a commit gives you the flexibility to commit after a very
+important but small change to fix a bug as well as to commit after adding
+multiple lines of code to add a new feature.
+The cons of manually choosing when to commit: also related to getting to
+choose how often to commit, you could end up commiting too frequently or not
+often enough. These can result in huge commits that will result in you having
+to dig through many lines of code to find the change you are looking for. This
+makes me think about my answer to the last question where I was wasting time
+digging through chunks of code. If too often then you end up with a similar
+problem but in terms of having to sift through a ton of very small commits
+that may divide a feature up into too multiple commits. So you again have to
+sift through code to find the change you are looking for. A final con is that
+you may end up describing the commits in a confusing or inadequate way.
+The pros of automatically saved versions: you can't accidentally under or over
+commit, you have a regularly spaced version history. Without any effort, you
+can go back and find a prior version if you make a mistake.
+The cons of automatically saved versions: the version savings do bear any
+relation to how much content or the significance of content changes. You may
+end up with alot of meaningless small changes and significant changes may be
+either divided up or missed (Say you make a big change then undo it in between
+version saving intervals. The change wouldn't be reflected in the version
+history.)
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file
+separately?
+
+It has to do with the purpose of the version control system. Git was designed 
+to work with files that are part of software. This involves multiple files all
+being connected to each other and as a whole making up the program. As such,
+you want to track the project as a whole when changes are made. The state of
+each individual file does not necessarily reflect the state of the whole
+project. Multiple single file trackings would be a nightmare to connect
+together in trying to piece together the changes to multiple files to
+implement one feature or bug fix. Google Docs on the other hand is meant to be
+used to create largely self contained documents. Most of my experience with
+Google docs or another word processor or WordPress's auto version saving of
+posts has been isolated work on that one file without switching to other ones 
+frequently. As a result it would not make sense to take snapshots of other
+google docs or posts at the same time.
+
+
+How can you use the commands git log and diff to view the history of files?
+
+git log shows you the history of all the commits in chronological order with
+the most recent first. You can scroll through the commit log and read all of
+the messages until you find the commit you are looking for. Once you find the
+commit, if you want to see what changes were made in that commit as compared
+to one preceding it, you use git diff file1id file2id, which will then show
+you the changes with + for additons and - for deletions.
+
+
+How might using version control make you more confident to make changes that 
+could break something?
+
+Without version control the danger is that a potentially break inducing change 
+might not be easy to reverse especially if it involves deleting or changes 
+large amounts of code. This can make you extra cautious about trying out new 
+experimental features in a project. With version control, you can rest at ease 
+knowing that as long as you make a commit before embarking on you possible 
+breaking change, you can always recover the state of the repository before you 
+broke the code.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to start using git in my client projects so I can start reaping the 
+benefits of being able to make big changes without worrying about breaking the 
+site. I'm particularly interested in learning how to use branches to make big 
+changes without impacting the master branch. I also need to be able to use git 
+and github for the projects and potential employment in the future.
+
+
+
+
+
+
+

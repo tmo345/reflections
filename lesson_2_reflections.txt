@@ -23,3 +23,5 @@ system which would spread changes for one feature but in different files over
 multiple commits. This would be tricky to figure out where to look for a bug.
 
 Working directory has files that been changed since last commit. You use git add to put the changed files you want into staging area. Then when you use git commit you only add what you put into staging area into the commit which goes into repository. After this the staging area now contains the contents of the last commit.
+
+I can really think of the working area now as having a record of changes to the files from the previous staging/commit of the file. So you have file changes in working area and you have file snapshots in staging area that are the same as the last commit. You stage the changes that you want so that now the working area and staging area match. The stage is now different from the repository's last commit. You commit the staged changes to bring all the snapshots of the file in line and the commit is saved with a snapshot at that moment in time.

@@ -22,7 +22,11 @@ to commit from working directory, you would end up with a one file per commit
 system which would spread changes for one feature but in different files over 
 multiple commits. This would be tricky to figure out where to look for a bug.
 
-Working directory has files that been changed since last commit. You use git add to put the changed files you want into staging area. Then when you use git commit you only add what you put into staging area into the commit which goes into repository. After this the staging area now contains the contents of the last commit.
+Working directory has files that been changed since last commit. You use git 
+add to put the changed files you want into staging area. Then when you use git 
+commit you only add what you put into staging area into the commit which goes 
+into repository. After this the staging area now contains the contents of the 
+last commit.
 
 I can really think of the working area now as having a record of changes to 
 the files from the previous staging/commit of the file. So you have file 
@@ -34,7 +38,8 @@ snapshots of the file in line and the commit is saved with a snapshot at that
 moment in time.
 
 
-How can you use the staging area to make sure you have one commit per logical change?
+How can you use the staging area to make sure you have one commit per logical 
+change?
 
 You can make changes to you files in the working directory and when you reach 
 a logical change level of change, you can stage only the files with changes 
@@ -42,3 +47,21 @@ that are part of the change. You may have been concurrently working on a
 different feature or changed a function in a different file. You can stage the 
 logical change first, commit it, and then go back and stage each additional 
 logical change separarely.
+
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help? 
+
+The obvious answer is that when you are working on an experimental feature 
+that may or may not work and could even break the code that you are working 
+on. I'm trying to think of an example for me. Ah, one that comes to mind is 
+all the attempts I made to create tooltips or popovers for services in my 
+portfolio site. I had layouts with images and code that either used jquery 
+mobile tooltips or bootstrap popovers. These would have been perfect for 
+branches because I could have a branch for each one. In each of the cases, I 
+modified the code and then had to revert to original state manually when it 
+didn't work like I had hoped. Having the master branch untouched would have 
+made this process as simple as switching back to master. Further, I now have 
+none of the code I produced to add these features, so if I want to remake them 
+in the future, I have to start over. With the branches, I coudld git checkout 
+the branch and work on them at a later date.

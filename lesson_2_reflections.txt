@@ -21,3 +21,5 @@ to multiple files at the same time. If you could only have changes go directly
 to commit from working directory, you would end up with a one file per commit 
 system which would spread changes for one feature but in different files over 
 multiple commits. This would be tricky to figure out where to look for a bug.
+
+Working directory has files that been changed since last commit. You use git add to put the changed files you want into staging area. Then when you use git commit you only add what you put into staging area into the commit which goes into repository. After this the staging area now contains the contents of the last commit.

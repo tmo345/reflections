@@ -65,3 +65,20 @@ made this process as simple as switching back to master. Further, I now have
 none of the code I produced to add these features, so if I want to remake them 
 in the future, I have to start over. With the branches, I coudld git checkout 
 the branch and work on them at a later date.
+
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams help me see how branches come off of master or another branch. I 
+had no fully understood how git did logs but seeing the backwards arrows 
+helped me visualize how git works a little better. It logs the info on the 
+screen using a chain of parents. I now also understand the detached head 
+warning. When you checkout an earlier commit you end up on a node on the 
+diagram that has no branch name. If you make any changes and commit them they 
+will be inaccesible once you switch to a named branch. This is due to log 
+going back through parents. The checked out commit above is not a parent of 
+any current branch nodes so it is gone. So if we want to keep the changes and 
+have them accessibe we can run git checkout -b new_branch_name in order to 
+label where we are as a new branch that we can checkout and preserve the 
+changes. We also demonstrated the concept of reachability, which is related to 
+the first part of this answer.

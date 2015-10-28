@@ -32,3 +32,13 @@ the working area and staging area match. The stage is now different from the
 repository's last commit. You commit the staged changes to bring all the 
 snapshots of the file in line and the commit is saved with a snapshot at that 
 moment in time.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can make changes to you files in the working directory and when you reach 
+a logical change level of change, you can stage only the files with changes 
+that are part of the change. You may have been concurrently working on a 
+different feature or changed a function in a different file. You can stage the 
+logical change first, commit it, and then go back and stage each additional 
+logical change separarely.

@@ -1,0 +1,23 @@
+What happens when you intialize a repository? Why do you need it?
+
+When you intialize a repository git creates the .git directory in the project 
+folder. Now the working directory contains all the project files in addition 
+to the .git directory which will contain a revision hitory for each file git 
+is tracking for you over the different commits.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The working directory is where you do the "working" part of the equation, 
+meaning it is where you are making active changes and additions to the files 
+of your project. This way you can work like usual and then add changes to the 
+staging area, which are then queued to be included in the next commit. So the 
+staging area serves as sort of a holding for changes that will be included in 
+the next commit. The value is that you can make multiple additions to to the 
+staging area before making a commit. This allows you to commit changes to 
+multiple files simultaneously, creating the ability to let commits contain a 
+logical step in the development even when this step was the result of changes 
+to multiple files at the same time. If you could only have changes go directly 
+to commit from working directory, you would end up with a one file per commit 
+system which would spread changes for one feature but in different files over 
+multiple commits. This would be tricky to figure out where to look for a bug.

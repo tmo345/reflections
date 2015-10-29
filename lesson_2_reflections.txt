@@ -82,3 +82,15 @@ have them accessibe we can run git checkout -b new_branch_name in order to
 label where we are as a new branch that we can checkout and preserve the 
 changes. We also demonstrated the concept of reachability, which is related to 
 the first part of this answer.
+
+
+What is the result of merging two branches together? Why do we represent it in 
+the diagram the way we do?
+
+The result of merging two branches together is a new branch that has the two 
+merged branches as its parents. You end up with a commit reflecting the 
+changes of both branches combined at the time of merging. We represent it in 
+the diagram the way that we do because it shows how both branches are now 
+chains of parents for the merged branch. As a result, we can access and of the 
+commit history of either original branch in the git log of the new merged 
+branch.

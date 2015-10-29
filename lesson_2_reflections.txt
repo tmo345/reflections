@@ -94,3 +94,15 @@ the diagram the way that we do because it shows how both branches are now
 chains of parents for the merged branch. As a result, we can access and of the 
 commit history of either original branch in the git log of the new merged 
 branch.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges 
+manually?
+
+Automatic: If there are not conflicts, then the automatic merge is a great 
+time saver. You can bring together 2 branches into one pretty quickly. A con 
+would be if git includes 2 different functions that appear unrelated but 
+actually cause a conflict or problem. The pro of always manually doing merges 
+is that you get to make sure that all of the code that is being merged does 
+not conflict and you can make decisions about the best options. The con is 
+that you can end up needlessly spending time reviewing and manually resolving 
+nonconflicting differences.

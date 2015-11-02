@@ -52,3 +52,17 @@ while staying up to date with the latest commits to the remote. It also means yo
 sure that your changes to your master branch don't conflict with the remote.
 
 
+How would you collaborate without using Git or GitHub? What would be easier and what would
+be harder?
+
+Without Git or GitHub, everything would have to be manually sent, checked for differences,
+and merged. This means, I might send a changed project file to a collaborator. They would
+have to download it and read through to see how my version differs from theirs. They then
+have to make changes to theirs to reflect my changes. It gets even more tedious and error
+prone because now I need the most up to date project file, which means the collaborator
+now sends back the file they just merged so I can see the changes. This wouldn't be a huge
+issue except I may have made more changes to my version of the project file while my
+collaborator was merging my earlier changes. Now I have to manually check for differences,
+resolve conflicts, and incorporate changes into my file. This seems very inefficient and
+error prone. Except for not having to learn a new tool if you're not already familiar with
+Git, there does not seem to be anything easier about not using these tools.

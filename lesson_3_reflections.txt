@@ -1,49 +1,51 @@
 When would you want to use a remote repository rather than keeping all your work local?
 
-A remote repository would be useful for collaborating with others on a 
+A remote repository would be useful for collaborating with others on a
 project. Also, it can serve as a backup of your repository.
 
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-One of the big benefits of a distributed version control system is that you 
-can have a local full clone of a remote repository. This allows you to work on 
-your repository regardless of whether you are connected to the internet. 
-Manual pulls make more sense in this context. Also, if you are working 
-collabortatively on a project, you might not want all of the commits to the 
+One of the big benefits of a distributed version control system is that you
+can have a local full clone of a remote repository. This allows you to work on
+your repository regardless of whether you are connected to the internet.
+Manual pulls make more sense in this context. Also, if you are working
+collabortatively on a project, you might not want all of the commits to the
 remote repository to constantly update in your local one.
 
 
-Describe the difference between forks, clones, and branches. When would you 
+Describe the difference between forks, clones, and branches. When would you
 use one instead of another?
 
-    You initially start out with a master branch that consists of a series of 
-    linear commits in a chronological chain. A branch is made when you split 
-    off of the master branch to start a new independent series of commits. The 
-    new branch is still connected to and shares the history of master branch 
-    prior to the branch point. After the branch point, the commits made to the 
-    new branch will be separate from those made to the master branch. You use 
-    a branch when you are working within a repository and would like to for 
-    example work on a new feature while maintaining the working integrity of 
+    You initially start out with a master branch that consists of a series of
+    linear commits in a chronological chain. A branch is made when you split
+    off of the master branch to start a new independent series of commits. The
+    new branch is still connected to and shares the history of master branch
+    prior to the branch point. After the branch point, the commits made to the
+    new branch will be separate from those made to the master branch. You use
+    a branch when you are working within a repository and would like to for
+    example work on a new feature while maintaining the working integrity of
     the master branch.
 
-    A clone is when you create a new copy of a repository whether completely 
-    locally or copying a repository from GitHub to local. An example of a time 
-    when you would want to clone would be that you are going to collaborate 
-    with someone else on their project and you need a copy of the repository 
-    to start working. In the case of a repository you are working on, you 
-    might want to clone rather than create a new branch if you are going to 
-    dramatically take the project in a different direction from where you had 
-    been going. You are able to work on the cloned repository without 
+    A clone is when you create a new copy of a repository whether completely
+    locally or copying a repository from GitHub to local. An example of a time
+    when you would want to clone would be that you are going to collaborate
+    with someone else on their project and you need a copy of the repository
+    to start working. In the case of a repository you are working on, you
+    might want to clone rather than create a new branch if you are going to
+    dramatically take the project in a different direction from where you had
+    been going. You are able to work on the cloned repository without
     affecting the original.
 
-    A fork is a clone that GitHub makes for you on its servers. It is the same 
-    as a clone except that it allows for linking back to and credit to be 
-    given to the original repository/author. You would use this when you want 
-    to work on a project or experiment and modify for your own needs despite 
+    A fork is a clone that GitHub makes for you on its servers. It is the same
+    as a clone except that it allows for linking back to and credit to be
+    given to the original repository/author. You would use this when you want
+    to work on a project or experiment and modify for your own needs despite
     not having permissions to modify the original project.
 
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
 
+This allows you to have the most up to date version of the remote. If this is a project you are working on with a team, it allows you to continue to work on your master branch while staying up to date with the latest commits to the remote. It also means you can make sure that your changes to your master branch don't conflict with the remote.
 
 

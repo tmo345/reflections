@@ -46,6 +46,9 @@ use one instead of another?
 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
-This allows you to have the most up to date version of the remote. If this is a project you are working on with a team, it allows you to continue to work on your master branch while staying up to date with the latest commits to the remote. It also means you can make sure that your changes to your master branch don't conflict with the remote.
+This allows you to have the most up to date version of the remote. If this is a project
+you are working on with a team, it allows you to continue to work on your master branch
+while staying up to date with the latest commits to the remote. It also means you can make
+sure that your changes to your master branch don't conflict with the remote.
 
 

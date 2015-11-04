@@ -66,3 +66,17 @@ collaborator was merging my earlier changes. Now I have to manually check for di
 resolve conflicts, and incorporate changes into my file. This seems very inefficient and
 error prone. Except for not having to learn a new tool if you're not already familiar with
 Git, there does not seem to be anything easier about not using these tools.
+
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+If you are working on a new feature that may break the project as it is now in the master
+branch, then making changes in a separate branch, will allow you to preserve the function
+of the master branch version while you make the breaking changes in the branch. Once you
+are done with the new feature in the branch, you can resolve conflicts in a controlled mannner
+to ensure a smooth incorporation of the new feature into the master branch without breaking
+anything. The benefit of this approach is that if the master is the production code, you
+continue to ensure that it is working properly no matter what experimental features or fixes
+you are working on in any branches. The benefit of working on the master directly would be
+that you avoid the complexities of merge conflicts and pull requests in GitHub. However, these
+complexities would seem to be well worth it in order to get the benefits described above.
